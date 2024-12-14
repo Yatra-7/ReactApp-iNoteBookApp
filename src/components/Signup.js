@@ -16,7 +16,7 @@ const Signup = (props) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ name, email, password ,cpassword}),
     });
     const json = await response.json();
     console.log(json);
